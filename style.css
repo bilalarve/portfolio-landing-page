@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap");
+
+* {
+  font-family: "outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 40px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+nav a {
+  transition: 0.2s cubic-bezier(0.82, 0.1, 0.42, 0.99);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(63, 71, 94, 0.5);
+  margin-right: 48px;
+  padding: 0px 12px;
+  border-radius: 50px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #9b7df0;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+button.btn-primary {
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  background-color: #324065;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: #9b7df0;
+  padding: 14px 42px;
+}
+
+.cta {
+  width: 379px;
+  text-align: right;
+}
+
+.hero {
+  height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/bg-blur.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-title {
+  color: rgba(147, 156, 180, 1);
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+}
+.hero-title span {
+  color: #324065;
+}
+
+.about-me {
+  background-color: #324065;
+  padding: 140px 0;
+}
+
+.about-me .wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 80px;
+}
+
+.about-title {
+  grid-column: span 5 / span 5;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 93px;
+  color: white;
+}
+
+.text-about {
+  grid-column: span 7 / span 7;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 116.5%;
+}
+
+.text-about p span {
+  color: white;
+}
+
+.cta-about {
+  margin-top: 32px;
+}
+
+button.about-me {
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  background-color: #ff9595;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+button.about-me:hover {
+  background-color: #f9b96e;
+  padding: 14px 40px;
+}
+
+.do {
+  padding: 140px 0;
+}
+
+.do-title {
+  color: #324065;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 93px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.card-wrapper {
+  padding-top: 84px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  grid-column: span 4 / span 4;
+  padding: 62px 66px;
+  /* border: 1px solid #e2e4ea; */
+  border-radius: 24px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 64px 40px rgba(72, 90, 139, 0.06);
+  transform: translateY(-20px);
+}
+
+.card h2 {
+  padding: 32px 0;
+  color: #324065;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.card p {
+  color: #939cb4;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 188%;
+}
+
+button.learn {
+  margin-top: 32px;
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  padding: 14px 24px;
+  border: 1px solid #e2e4ea;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #324065;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.learn:hover {
+  padding: 14px 40px;
+  background-color: #324065;
+  color: white;
+  border: 1px solid #324065;
+}
+
+.project {
+  padding: 140px 0;
+  display: flex;
+  background-color: #f8f9fc;
+}
+
+.project-wrap {
+  padding-top: 84px;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* align-items: center;
+  text-align: center;
+  justify-content: center; */
+  gap: 32px;
+}
+
+.project-photo {
+  background-color: #9b7df0;
+  height: 323px;
+  border-radius: 24px 24px 8px 8px;
+  background-size: cover;
+}
+
+.photo-1 {
+  background-image: url(assets/drib.png);
+}
+
+.photo-2 {
+  background-image: url(assets/digital-agency-2.png);
+}
+
+.photo-3 {
+  background-image: url(assets/Talent-management-2.png);
+}
+
+.photo-4 {
+  background-image: url(assets/cloud-storage-app-1.png);
+}
+
+.project-card {
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  grid-column: span 6 / span 6;
+  width: 564;
+  padding: 24px 24px;
+  border-radius: 24px;
+}
+
+.project-card:hover {
+  padding: 24px 24px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 34px 31px rgba(72, 90, 139, 0.06);
+  transform: translateY(-20px);
+}
+
+.project-card h2 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  color: #324065;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.type {
+  color: #939cb4;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.cta-project {
+  padding-top: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collab {
+  background-color: #9b7df0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.collab-title {
+  color: white;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 120px;
+}
+
+.collab-text {
+  color: white;
+  opacity: 60%;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 116.5%;
+  margin: 60px 0;
+}
+
+.social {
+  padding-top: 82px;
+  justify-content: center;
+  display: flex;
+  gap: 32px;
+}
+
+.social a {
+  transition: 0.5s cubic-bezier(0.91, 0.08, 0.19, 0.87);
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 24px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+
+.social a:hover {
+  background-color: white;
+  color: #9b7df0;
+  transform: translateY(-10px);
+}
+
+/* 
+.social {
+  padding-top: 82px;
+  justify-content: center;
+  display: flex;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a .fa-brands {
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 32px;
+  border: 1px solid white;
+  width: 64px;
+  height: 64px;
+  font-size: 24px;
+  color: white;
+  border-radius: 50px;
+}
+.social a:hover {
+} */
+
+/* li {
+  list-style: none;
+  font-size: 20px;
+  margin: 10px 30px;
+  color: white;
+  padding: 18px 18px;
+  border: 1px solid white;
+  border-radius: 50px;
+} */
